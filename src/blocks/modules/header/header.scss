@@ -33,7 +33,7 @@
     }
 }
 
-.header__nav {}
+// .header__nav {}
 
 .menu {
     display: flex;
@@ -43,10 +43,11 @@
 }
 
 .menu2 {
+    display: none;
     width: 221px;
     position: absolute;
     left: 18px;
-    display: flex;
+
     flex-direction: column;
     align-items: flex-start;
     padding: 13px 15px;
@@ -57,6 +58,9 @@
     border-bottom-right-radius: 10px;
     border-top-right-radius: 10px;
 
+    &:hover {
+        display: flex;
+    }
 }
 
 .nav-link {
@@ -81,12 +85,17 @@
         border-top-left-radius: 10px;
         border-top-right-radius: 10px;
     }
+
+    &:hover+.menu2 {
+        display: flex;
+    }
 }
 
 
 
 
 .nav-link2 {
+
     color: black;
     padding: 13px 15px;
     margin: 0;
