@@ -1,0 +1,106 @@
+.header {
+    width: 100%;
+    position: fixed;
+    padding: 30px 0;
+
+}
+
+.header-inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.header__logo {
+    width: 160px;
+    height: 50px;
+    position: relative;
+
+
+    &::before {
+        content: url(../../../img/header/BIKE_ICON.png);
+        position: absolute;
+        left: 65px;
+
+    }
+
+    &::after {
+        content: url(../../../img/header/THE_BIKE_SHOP.svg);
+        position: absolute;
+        bottom: -4px;
+
+    }
+}
+
+.header__nav {}
+
+.menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+.menu2 {
+    width: 221px;
+    position: absolute;
+    left: 18px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 13px 15px;
+
+    background-color: #fcff19;
+
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border-top-right-radius: 10px;
+
+}
+
+.nav-link {
+    margin: 0 18px;
+    position: relative;
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 15px;
+    font-weight: 700;
+    line-height: 32.49px;
+    text-transform: uppercase;
+    letter-spacing: 0.07px;
+    background-color: transparent;
+
+    padding: 13px 15px;
+
+    &:hover {
+
+        background-color: #fcff19;
+        color: black;
+        padding: 13px 15px;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+    }
+}
+
+
+
+
+.nav-link2 {
+    color: black;
+    padding: 13px 15px;
+    margin: 0;
+}
+
+.header__basket {
+    width: 26px;
+    height: 26px;
+    background: url(../../../img/header/Basket_icon.svg) no-repeat;
+    background-size: contain;
+    margin-left: 18px;
+
+}
+
+ul {
+    list-style-type: none;
+}
