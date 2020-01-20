@@ -7,7 +7,7 @@
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
-    padding: 67px 0 84px;
+    padding: 67px 20px 84px;
 
 }
 
@@ -79,4 +79,19 @@
         color: #fcff19;
     }
 
+}
+
+@media (max-width: 560px) {
+
+    .contact-us {
+        text-align: center;
+    }
+
+    .contact-us__firs-row {
+        flex-direction: column;
+    }
+
+    .contact-us__surname {
+        margin-left: 0;
+    }
 }

@@ -11,7 +11,8 @@
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    padding: 0 20px;
+
+
 }
 
 
@@ -28,7 +29,10 @@
 .categories__items {
     width: 100%;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+    flex-wrap: wrap;
+
+
 }
 
 .categories__item1 {
@@ -47,7 +51,7 @@
     width: 100%;
     max-width: 346px;
     height: 288px;
-
+    margin: 10px;
     background-position: center;
     background-size: contain;
     display: flex;

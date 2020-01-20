@@ -8,6 +8,7 @@
     justify-content: space-between;
     align-items: center;
     padding: 0 20px;
+    position: relative;
 }
 
 
@@ -104,4 +105,19 @@
 
 ul {
     list-style-type: none;
+}
+
+@media (max-width: 600px) {
+    .footer__nav {
+        bottom: 95px;
+        position: absolute;
+    }
+
+    .footer__menu-list {
+        flex-wrap: wrap;
+        background-color: #fcff19;
+        border-radius: 10px;
+        border: 1px solid #000;
+
+    }
 }
