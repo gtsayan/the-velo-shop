@@ -9,8 +9,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    // position: relative;
-    margin-bottom: 75px;
+
 }
 
 
@@ -30,10 +29,10 @@
     color: #ffffff;
     font-size: 50px;
     font-weight: 700;
-    line-height: 32.49px;
+    text-align: center;
     text-transform: uppercase;
     letter-spacing: 0.25px;
-    margin-bottom: 26px;
+    margin: 80px 0 26px;
 }
 
 .intro__text {
@@ -41,7 +40,7 @@
     font-family: "Roboto";
     font-size: 28px;
     font-weight: 100;
-    line-height: 32.49px;
+    text-align: center;
     margin-bottom: 33px;
     color: #ffffff;
 
@@ -54,11 +53,53 @@
 .intro__go-down {
     width: 66px;
     height: 77px;
-    background-image: url(../../../img/intro/go-down.svg);
+    background-image: url(../../../img/intro/go-down-grey.svg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
     position: absolute;
     bottom: 0;
     margin-bottom: 33px;
+
+    z-index: 1;
+
+    &::after {
+        content: "";
+        width: 66px;
+        height: 33px;
+        background-image: url(../../../img/intro/go-down-yellow.svg);
+        background-repeat: no-repeat;
+        background-position: top;
+        background-size: cover;
+        position: absolute;
+        bottom: 0;
+        z-index: 10;
+        top: 0px;
+        transition: height .5s linear;
+
+
+    }
+
+    &:hover::after {
+        height: 78px;
+    }
+}
+
+@media (max-width: 660px) {
+    // .header__basket {
+    //     order: 0;
+    // }
+}
+
+@media (max-width: 568px) {
+
+    .intro__inner,
+    .intro__go-down {
+        transform: scale(0.7);
+        margin: 0;
+    }
+
+    // .header__basket {
+    //     order: 1;
+    // }
 }

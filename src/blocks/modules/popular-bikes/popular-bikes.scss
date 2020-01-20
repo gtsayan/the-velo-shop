@@ -1,0 +1,119 @@
+.popular-bikes {
+    width: 100%;
+    padding: 75px 25px 35px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 35px;
+}
+
+
+.popular-bikes__items {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+
+}
+
+.popular-bikes__item {
+    width: 33.333%;
+    max-width: 491px;
+    margin: 0 100px;
+
+}
+
+.popular-bikes__foto {
+    width: 490px;
+    height: 391px;
+
+    background-position: center;
+    background-size: cover;
+}
+
+.popular-bikes__foto1 {
+    background: url(../../../img/popular-bikes/ITEM_PHOTO1.png) no-repeat;
+}
+
+.popular-bikes__foto2 {
+    background: url(../../../img/popular-bikes/ITEM_PHOTO2.png) no-repeat;
+}
+
+.popular-bikes__foto3 {
+    background: url(../../../img/popular-bikes/ITEM_PHOTO3.png) no-repeat;
+}
+
+
+
+
+.popular-bikes__controls {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.popular-bikes__info {
+    display: flex;
+    flex-direction: column;
+}
+
+.popular-bikes__model {
+    color: #000000;
+    font-size: 15px;
+    font-weight: 700;
+    line-height: 32.49px;
+    text-transform: uppercase;
+    letter-spacing: 0.07px;
+}
+
+.popular-bikes__prise {
+    font-size: 15px;
+    font-weight: 300;
+}
+
+.popular-bikes__inputs {
+    display: flex;
+    justify-content: space-between;
+}
+
+.popular-bikes__options {
+    width: 144px;
+    height: 43px;
+    background: url(../../../img/popular-bikes/BUTTON_bg.svg) no-repeat;
+    -webkit-appearance: none;
+    border: none;
+    padding: 15px 20px;
+    font-size: 12px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #000000;
+    letter-spacing: 0.06px;
+    cursor: pointer;
+    outline: none;
+    margin-right: 9px;
+}
+
+
+
+.popular-bikes__btn {
+    width: 94px;
+    height: 43px;
+    border-radius: 10px;
+    background-color: #b7b7b7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #ffffff;
+    font-size: 12px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.06px;
+    text-decoration: none;
+    transition: all .4s linear;
+
+    &:hover {
+        background-color: #000000;
+        color: #fcff19;
+    }
+}

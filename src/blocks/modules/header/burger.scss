@@ -1,0 +1,48 @@
+.burger-shower {
+    display: none;
+}
+
+
+
+
+
+@media (max-width: 500px) {
+    .header__nav {
+        display: none;
+    }
+
+    .burger-shower:checked~.header__nav {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        right: 5px;
+        bottom: -177px;
+        align-items: flex-end;
+        background-color: transparent;
+        padding: 0 18px;
+        // border: 1px solid #666;
+        width: auto;
+    }
+
+    .hamburger {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        width: 30px;
+        height: 30px;
+        line-height: .1em;
+        margin-right: 20px;
+        padding: 0 .4em .4em;
+        cursor: pointer;
+
+    }
+
+    .burger-item {
+        width: 30px;
+        height: 3px;
+        border: 0;
+        background: #fff;
+        /* border: none; */
+    }
+}
