@@ -8,7 +8,9 @@
 
 @media (max-width: 600px) {
     .footer__nav {
-        display: none;
+        // display: none;
+        transform: scaleX(0);
+        transition: transform .3s linear;
     }
 
     .f-burger-shower:checked~.footer__nav {
@@ -22,6 +24,7 @@
         padding: 0 18px;
         // border: 1px solid #666;
         width: auto;
+        transform: scaleX(1);
     }
 
     .f-hamburger {
