@@ -2,18 +2,18 @@
     <div class="title">CONTACT US</div>
     <div class="contact-us__subtitle">Please contact us for all inquiries and purchase options.</div>
 
-    <div class="contact-us__form">
+    <form action="" class="contact-us__form">
 
         <div class="contact-us__firs-row">
-            <input type="text" class="contact-us__name contact-us__form-field" placeholder="Full name">
-            <input type="text" class="contact-us__surname contact-us__form-field" placeholder="surname">
+            <input type="text" class="contact-us__name contact-us__form-field" required placeholder="Full name">
+            <input type="text" class="contact-us__surname contact-us__form-field" required placeholder="surname">
         </div>
-        <input type="email" class="contact-us__email contact-us__form-field" placeholder="USER@DOMAIN.COM">
+        <input type="email" class="contact-us__email contact-us__form-field" required placeholder="USER@DOMAIN.COM">
 
-        <textarea class="contact-us__message contact-us__form-field" placeholder="MESSAGE" name="" id="" cols="30"
-            rows="5"></textarea>
-        <a href="" class="contact-us__btn btn">send</a>
+        <textarea class="contact-us__message contact-us__form-field" required placeholder="MESSAGE" name="" id=""
+            cols="30" rows="5"></textarea>
 
-    </div>
+        <input type="submit" class="contact-us__btn btn" value="send">
+    </form>
 
 </div> <!-- contact-us -->
